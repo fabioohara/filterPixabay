@@ -5,7 +5,7 @@ import { FaComment,FaCheck,FaEye } from "react-icons/fa";
 export const ImgItems = ({previewURL,likes,views,comments}) => {
   return (
 <>
-    <Grid item md={3} xs={3}>
+    <Grid  style={{ display: 'flex', alignItems: 'center',justifyContent:'space-between'}} item md={3} >
     <Card>
         <CardMedia component="img" image={previewURL} height={200}
           sx={{  objectFit:"cover" }}/>
